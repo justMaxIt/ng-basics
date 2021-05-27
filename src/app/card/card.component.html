@@ -1,7 +1,16 @@
 <div class="card">
    <h2>{{title}}</h2>
    <p>{{text}}</p>
-   <strong>Number: {{number}}</strong>
+   <p>{{getInfo()}}</p>
+   <div>
+      <img [src]='imgUrl'>
+      <br />
+      <button [disabled]='disabled'>Enable</button>
+   </div>
+
+
+   <!-- <strong>Number: {{number}}</strong>
    <em>{{array}}</em>
-   <pre>{{obj | json}}</pre>
+   <pre>{{obj | json}}</pre> -->
+
 </div>
