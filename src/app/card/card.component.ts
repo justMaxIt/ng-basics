@@ -10,15 +10,20 @@ import { Component, OnInit } from '@angular/core';
 export class CardComponent implements OnInit {
    title: string = 'My Card Title'
    text: string = 'My text'
+   textColor: string = ''
 
-   ngOnInit() { }
+   ngOnInit() {
+      // console.log("Initialization");
+   }
+
    changeTitle() {
       this.title = "This title has been changed"
    }
-   inputHandler(value: any) {
-      // const value = event.target.value
-      this.title = value
 
+   // inputHandler(value: any) {
+   //    // const value = event.target.value
+   //    this.title = value }
+   changeHandler() {
+      console.log(this.title);
    }
-
 }
