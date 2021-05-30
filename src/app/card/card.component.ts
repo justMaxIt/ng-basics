@@ -11,9 +11,13 @@ import { Card } from '../app.component';
 export class CardComponent implements OnInit {
 
    @Input() card: Card = { title: "", text: "" }
+   @Input() index: number = 0
 
    title: string = 'My Card Title'
    text: string = 'My text'
+
+   cardDate: Date = new Date()
+
    textColor: string = ''
 
    ngOnInit() {
